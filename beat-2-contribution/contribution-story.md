@@ -2,40 +2,25 @@
 
 Path: `beat-2-contribution/contribution-story.md`
 
-This file is Assignment 5, and it is graded at the path above; a copy kept anywhere else in
-the repository is not read. **Keep every section header below under its exact name** — the
-format criteria grade exactly that. Your course repo link is the whole submission: no tool
-files and no evidence uploads are part of Assignment 5.
+This file is Assignment 5, and it is graded at the path above; a copy kept anywhere else in the repository is not read. **Keep every section header below under its exact name** — the format criteria grade exactly that. Your course repo link is the whole submission: no tool files and no evidence uploads are part of Assignment 5.
 
 **Contribution Number:** [1]
 **Student:** [Student name]
-**GitHub Username:** [your GitHub username, exactly as it appears on your profile - no @, no
-profile URL. Your comments upstream are identified by this name.]
+**GitHub Username:** [your GitHub username, exactly as it appears on your profile - no @, no profile URL. Your comments upstream are identified by this name.]
 **Issue:** [GitHub issue link]
 **Pull Request:** [GitHub PR link, once opened]
 
-One repository, built across units 5 to 8, telling the whole story of your real
-contribution. Fill it as you work, not at the end — the sections below ask for evidence that
-is far easier to write down as it happens than to reconstruct in the last weekend.
+One repository, built across units 5 to 8, telling the whole story of your real contribution. Fill it as you work, not at the end — the sections below ask for evidence that is far easier to write down as it happens than to reconstruct in the last weekend.
 
-Contribution Number stays `[1]` unless you make more than one contribution this term; it
-just numbers them.
+Contribution Number stays `[1]` unless you make more than one contribution this term; it just numbers them.
 
 ---
 
 ## Toolkit
 
-Every story section below, from Why I Chose This Issue through Pull
-Request, ends with a Toolkit block: which tool did that phase's work
-and how you used it, what it produced, what difficulties or
-shortcomings it presented, and what you changed or would change
-because of them. Together the blocks are the thread the rubric's
-Toolkit points read, and they are the raw material for your unit-9
-portfolio, so keep them current as you work rather than
-reconstructing them later.
+Every story section below, from Why I Chose This Issue through Pull Request, ends with a Toolkit block: which tool did that phase's work and how you used it, what it produced, what difficulties or shortcomings it presented, and what you changed or would change because of them. Together the blocks are the thread the rubric's Toolkit points read, and they are the raw material for your unit-9 portfolio, so keep them current as you work rather than reconstructing them later.
 
-A Toolkit block looks like this (copy it into each story section and
-fill it there):
+A Toolkit block looks like this (copy it into each story section and fill it there):
 
 ```text
 **Toolkit**
@@ -47,54 +32,37 @@ fill it there):
   update, or "nothing"]
 ```
 
-This section also keeps one short dated entry per week of tool work,
-starting below: what you built or changed that week, what broke, and
-what you changed because of it. The blocks tell the story where it
-happened; these entries are the toolkit's own timeline.
+This section also keeps one short dated entry per week of tool work, starting below: what you built or changed that week, what broke, and what you changed because of it. The blocks tell the story where it happened; these entries are the toolkit's own timeline.
 
-All four entries are graded. Keep every heading below, and fill each
-one in the week it belongs to.
+All four entries are graded. Keep every heading below, and fill each one in the week it belongs to.
 
-**Unit 5: [one line on the tool work]**
+**Unit 5: Built a scout to filter and rank issues for relevancy**
 
-[2-4 sentences: what you built (the scout, your strategy), what broke
-or fell short, what changed because of it.]
+[2-4 sentences: what you built (the scout, your strategy), what broke or fell short, what changed because of it.]
+
+I built a Claude skill to scout for Github issues using custom Github queries and ranking filters, then graded the top 5 issues using a rubric based on the user's fit profile. My first scan found the top 5 candidates acceptable, but upon closer look, not all were relevant to the user's preference for fintech projects. A Victoria 3 game mod passed because it had a “banking” game mechanic which matched a query, and the top pick was a solo repo on hiatus with zero stars because the pause notice itself was a recent commit. I fixed them by adding required checks for hiatus, repo use, tightened to the fintech and adjacent scope, keeping only one issue per repo, and filtering out field-irrelevant terms (ex: gaming). I also later broadened the search strategy to include unlabeled issues, added a one year inactivity limit, and added queries for the user's main frontend languages (Typescript, Javascript).
 
 **Unit 6: [one line on the tool work]**
 
-[2-4 sentences: the voice-guard, the repo-memory file. What broke or
-fell short, and what changed because of it. "Nothing broke" counts when
-it is true - say how you know.]
+[2-4 sentences: the voice-guard, the repo-memory file. What broke or fell short, and what changed because of it. "Nothing broke" counts when it is true - say how you know.]
 
 **Unit 7: [one line on the tool work]**
 
-[2-4 sentences: the ship-gate and your gate manifest. What it produced
-on your real branch, what fought you, what changed because of it.]
+[2-4 sentences: the ship-gate and your gate manifest. What it produced on your real branch, what fought you, what changed because of it.]
 
 **Unit 8: [one line on the tool work]**
 
-[2-4 sentences: the PR-monitor and your playbook. What it read, what it
-drafted, what you did with the draft.]
+[2-4 sentences: the PR-monitor and your playbook. What it read, what it drafted, what you did with the draft.]
 
 ---
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs in your own words: how you searched, what your scan
-surfaced, what your scout's verdict said, why this issue fits your
-profile, and what you hope to learn. If your scout's verdict on it
-was reject and you chose it anyway, say so here and say why; choosing
-against your own tool silently is what loses points. Close with an
-honest read of the tool itself: where the scout fell short on a real
-wild search and what you changed or would change, or what convinced
-you it held up. **Record the link to your claim comment in this section too.**
-Not claimed yet? Write `claim pending` and today's date where the link goes,
-and add the link the moment your claim lands.]
+[1-2 paragraphs in your own words: how you searched, what your scan surfaced, what your scout's verdict said, why this issue fits your profile, and what you hope to learn. If your scout's verdict on it was reject and you chose it anyway, say so here and say why; choosing against your own tool silently is what loses points. Close with an honest read of the tool itself: where the scout fell short on a real wild search and what you changed or would change, or what convinced you it held up. **Record the link to your claim comment in this section too.** Not claimed yet? Write `claim pending` and today's date where the link goes, and add the link the moment your claim lands.]
 
 **Toolkit**
 
-- Tool: issue-scout (your scout: your search strategy, your rubric),
-  and how you used it
+- Tool: issue-scout (your scout: your search strategy, your rubric), and how you used it
 - What it produced: [the scan and its verdict on this issue, described]
 - Difficulties: [where it fell short, or "none met" if none did]
 - What changed: [what you patched or would update, or "nothing"]
@@ -132,10 +100,7 @@ and add the link the moment your claim lands.]
 
 **Environment Setup**
 
-[What a stranger would need to stand this up: your operating system,
-the relevant versions (language, runtime, package manager, the project
-itself), and how you set the project up. Then the challenges you faced
-and how you solved them, or that none came up.]
+[What a stranger would need to stand this up: your operating system, the relevant versions (language, runtime, package manager, the project itself), and how you set the project up. Then the challenges you faced and how you solved them, or that none came up.]
 
 **Steps to Reproduce**
 
@@ -147,9 +112,7 @@ and how you solved them, or that none came up.]
 
 - **Commit showing reproduction:** [link to commit in your fork]
 - **Screenshots/logs:** [if applicable]
-- **My findings:** [what you discovered during reproduction; an
-  honest, evidenced cannot-reproduce that led you to re-pick or ask
-  the maintainer belongs here and costs you nothing]
+- **My findings:** [what you discovered during reproduction; an honest, evidenced cannot-reproduce that led you to re-pick or ask the maintainer belongs here and costs you nothing]
 
 **Toolkit**
 
@@ -164,13 +127,11 @@ and how you solved them, or that none came up.]
 
 **Analysis**
 
-[Your analysis of the root cause: what is causing the issue, traced
-to the files and functions involved.]
+[Your analysis of the root cause: what is causing the issue, traced to the files and functions involved.]
 
 **Proposed Solution**
 
-[High-level description of your fix approach, and what you are
-deliberately NOT changing.]
+[High-level description of your fix approach, and what you are deliberately NOT changing.]
 
 **Implementation Plan**
 
@@ -178,8 +139,7 @@ deliberately NOT changing.]
 2. [Add or change Z]
 3. [Update tests]
 
-[Record deviations here as they happen: what changed mid-build and
-why. A recorded deviation is honest work; silent drift is not.]
+[Record deviations here as they happen: what changed mid-build and why. A recorded deviation is honest work; silent drift is not.]
 
 **Toolkit**
 
@@ -192,10 +152,7 @@ why. A recorded deviation is honest work; silent drift is not.]
 
 ## Testing Strategy
 
-[What observable checks prove the fix: your reproduction steps re-run
-against the built change (before and after), and the repo's own test
-suite or checks with the outcome shown. "Tests pass" with nothing
-observable named is not a strategy.]
+[What observable checks prove the fix: your reproduction steps re-run against the built change (before and after), and the repo's own test suite or checks with the outcome shown. "Tests pass" with nothing observable named is not a strategy.]
 
 **Toolkit**
 
@@ -208,8 +165,7 @@ observable named is not a strategy.]
 
 ## Implementation Notes
 
-[A running log, added to as you work. Date each entry. What you
-built, decisions you made when you made them, wrong turns included.]
+[A running log, added to as you work. Date each entry. What you built, decisions you made when you made them, wrong turns included.]
 
 **[Date]**
 
@@ -232,18 +188,14 @@ built, decisions you made when you made them, wrong turns included.]
 
 **PR Link:** [GitHub PR URL when opened]
 
-**PR Description:** [what the PR says; much of the content above
-adapts into it]
+**PR Description:** [what the PR says; much of the content above adapts into it]
 
 **Maintainer Feedback:**
 
-- [Date]: [feedback received, or "none yet"; silence is a normal
-  state and costs you nothing]
+- [Date]: [feedback received, or "none yet"; silence is a normal state and costs you nothing]
 - [Date]: [how you addressed it]
 
-**Status:** [Awaiting review / Iterating / Merged / Closed. The
-status is a fact you record, never a grade: the PR is graded as
-opened.]
+**Status:** [Awaiting review / Iterating / Merged / Closed. The status is a fact you record, never a grade: the PR is graded as opened.]
 
 **Toolkit**
 
@@ -262,8 +214,7 @@ opened.]
 
 **Challenges Overcome**
 
-[What was hard and how you solved it; point at the real events, the
-Toolkit blocks above are full of them.]
+[What was hard and how you solved it; point at the real events, the Toolkit blocks above are full of them.]
 
 **What I'd Do Differently Next Time**
 
@@ -273,10 +224,7 @@ Toolkit blocks above are full of them.]
 
 ## Resources Used
 
-[What actually helped, not a reading list. List things this story
-already shows you using: the doc you followed to set the environment
-up, the thread that explained the bug, the person who answered you.
-One real entry beats ten plausible ones.]
+[What actually helped, not a reading list. List things this story already shows you using: the doc you followed to set the environment up, the thread that explained the bug, the person who answered you. One real entry beats ten plausible ones.]
 
 - [Link to documentation that helped]
 - [Discussion, issue, or post that helped]
