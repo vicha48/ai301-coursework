@@ -38,8 +38,6 @@ All four entries are graded. Keep every heading below, and fill each one in the 
 
 **Unit 5: Built a scout to filter and rank issues for relevancy**
 
-[2-4 sentences: what you built (the scout, your strategy), what broke or fell short, what changed because of it.]
-
 I built a Claude skill to scout for Github issues using custom Github queries and ranking filters, then graded the top 5 issues using a rubric based on the user's fit profile. My first scan found the top 5 candidates acceptable, but upon closer look, not all were relevant to the user's preference for fintech projects. A Victoria 3 game mod passed because it had a “banking” game mechanic which matched a query, and the top pick was a solo repo on hiatus with zero stars because the pause notice itself was a recent commit. I fixed them by adding required checks for hiatus, repo use, tightened to the fintech and adjacent scope, keeping only one issue per repo, and filtering out field-irrelevant terms (ex: gaming). I also later broadened the search strategy to include unlabeled issues, added a one year inactivity limit, and added queries for the user's main frontend languages (Typescript, Javascript).
 
 **Unit 6: [one line on the tool work]**
